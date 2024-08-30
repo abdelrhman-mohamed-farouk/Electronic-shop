@@ -16,7 +16,8 @@ body {
             background: #fff;
             padding: 12px;
             border-radius: 12px;
-            width: 30%;
+            width: calc(100% / 3);
+            margin: 0 40px;
             div{
                 display: flex; 
                 justify-content: end;
@@ -222,7 +223,8 @@ body {
         
         .up{
             img{
-                width: 200px;
+                width: 150px;
+                width: 50%;
             }
         }
     }

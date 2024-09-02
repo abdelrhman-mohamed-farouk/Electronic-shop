@@ -2,14 +2,16 @@
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
-  <BrowserRouter>
+  <BrowserRouter  >
   
   <App />
   </BrowserRouter>
+  <Toaster/>
   
   </>
 )
@@ -19,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 // npm i -D react-router-dom@latest
 // npm i sass
 // npm i bootstrap@latest
+
 // npm i axios
 
 // #State Management

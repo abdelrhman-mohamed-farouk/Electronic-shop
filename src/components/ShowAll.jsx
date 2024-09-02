@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import sub from "../assets/sub.svg"
 
 function ShowAll() {
@@ -7,7 +8,9 @@ function ShowAll() {
             <div className="text">
                 <h3>سجل دلوقتي علشان تشوف كل المنتجات
                 </h3>
-                <button>سجل الان</button>
+               <button>
+               <Link to={"/login"} style={{textDecoration:"none"}}>سجل الان</Link>
+               </button>
             </div>
             <div className="img">
                 <img src={sub} alt="" />

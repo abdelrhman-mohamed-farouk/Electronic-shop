@@ -4,6 +4,7 @@ import egypt from "../assets/egypt.png"
 import uae from "../assets/uae.png"
 import kyt from "../assets/kyt.png"
 import ksa from "../assets/ksa.png"
+import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <section style={{ background: "#eee", padding: "120px 0" }}>
@@ -18,7 +19,7 @@ export default function Hero() {
             </div>
            <h6 style={{fontSize:"5rem",direction:"rtl"}}>هنساعدك تبدأ تجارتك الإلكترونية</h6>
            <p className="" style={{direction:"rtl",fontSize:"22px",color:"#AAA"}}>هنساعدك تبدأ بكل سهولة وبدون خبرة . لأننا هنوفر لك منتجات متنوعة بأفضل سعر يضمن لك أكبر ربح</p>
-           <button className="d-flex px-4 py-1 rounded-3 border-0 text-white " style={{background:"rgb(5 185 110)"}}><h3>ابدء معانا</h3></button>
+           <Link to={"/login"} className="d-flex px-4 py-1 rounded-3 border-0 text-white " style={{background:"rgb(5 185 110)",textDecoration:"none"}}><h3>ابدء معانا</h3></Link>
            <div className="flags d-flex gap-2 flex-row-reverse align-items-center">
             <p className="mt-1">:متاح في</p>
                 <img src={egypt}  style={{objectFit:"contain"}}/>

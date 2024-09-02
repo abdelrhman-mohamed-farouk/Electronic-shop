@@ -4,6 +4,7 @@ import appStore from "../assets/app-store.png"
 import instagram  from "../assets/instagram.png"
 import Whatsapp from "../assets/whatsapp.png"
 import Facebook  from "../assets/facebook.png"
+import { Link } from "react-router-dom"
 
 
 export default function Footer() {
@@ -22,7 +23,7 @@ export default function Footer() {
       <div className="center">
         <div className="textright">
             <p>ملاحظات عن الشحن</p>
-            <p>تواصل معنا </p>
+            <Link to={"/contact"} style={{color:"white",textDecoration:"none"}}>تواصل معنا </Link>
             <p>الشروط والاحكام</p>
         </div>
         <div className="iconleft">
